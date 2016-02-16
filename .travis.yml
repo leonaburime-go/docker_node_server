@@ -20,5 +20,5 @@ install: true
   #- npm install -g mocha
   #- mocha test
 
-script:
-  - mocha test
+script: true
+  #- mocha test
