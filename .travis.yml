@@ -13,7 +13,7 @@ node_js:
 before_install:
  #- node server.js &
   - docker build -t docker_node .
-  - docker run -d -p 127.0.0.1:3001:3001 docker_node /bin/sh -c "cd /usr/src/node_server/;"
+  - docker run -d -p 127.0.0.1:3001:3001 docker_node /bin/sh -c "cd /usr/src/node_server/;ls;"
 
 install: true
   #- npm install
