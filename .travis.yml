@@ -11,7 +11,7 @@ node_js:
   - "0.12"
 
 install:
-  - npm install
+  #- npm install
   - npm install -g mocha
 before_script:
  #- node server.js &

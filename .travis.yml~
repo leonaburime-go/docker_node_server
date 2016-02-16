@@ -1,10 +1,19 @@
+sudo: required
+
 language: node_js
+
+services:
+  - docker
+
 node_js:
   - "4.1"
   - "4.0"
   - "0.12"
+
 install:
   - npm install
   - npm install -g mocha
-#before_script:
+before_script:
  #- node server.js &
+  - docker run -d -p 127.0.0.1:3001:3001 /bin/sh -c "cd /usr/src/node_server/; mocha test"
+
