@@ -1,8 +1,9 @@
 FROM node:argon
 
 # Create app directory
-#RUN mkdir -p /usr/src
-#WORKDIR /usr/src
+RUN mkdir -p /usr/src
+COPY node_server /usr/src/node_server
+WORKDIR /usr/src/node_server
 
 #Expose port to connect to 
 EXPOSE 3001

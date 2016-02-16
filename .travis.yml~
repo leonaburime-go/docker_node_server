@@ -3,10 +3,8 @@ node_js:
   - "4.1"
   - "4.0"
   - "0.12"
-  - "0.10"
 install:
   - npm install
   - npm install -g mocha
-before_script:
-  - node server.js &
-  - node test.js
+#before_script:
+ #- node server.js &
