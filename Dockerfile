@@ -7,6 +7,7 @@ WORKDIR /usr/src/node_server
 
 #Expose port to connect to 
 EXPOSE 3001
+EXPOSE 3002
 
 #Copy and execute startup script
 COPY startup_node.sh /startup_node.sh
