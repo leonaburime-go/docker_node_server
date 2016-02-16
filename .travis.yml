@@ -15,5 +15,6 @@ install:
   - npm install -g mocha
 before_script:
  #- node server.js &
-  - docker run -d -p 127.0.0.1:3001:3001 /bin/sh -c "cd /usr/src/node_server/; mocha test"
+  - docker build -t docker_node .
+  - docker run -d -p 127.0.0.1:3001:3001 docker_node /bin/sh -c "cd /usr/src/node_server/; mocha test"
 
