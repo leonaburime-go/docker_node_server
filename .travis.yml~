@@ -13,9 +13,9 @@ node_js:
 before_install:
  #- node server.js &
   - docker build -t docker_node .
-  - docker run -d -p 3002:3002 docker_node /bin/sh -c "./startup.sh"
+  - docker run -d -p 3002:3002 docker_node /bin/sh -c "./startup_node.sh"
   - docker ps -a
-  - docker run docker_node /bin/sh -c "cd /usr/src/node_server; mocha /usr/src/node_server/test.js"
+  - docker run docker_node /bin/sh -c "./startup_node.sh"
 
 install: true
   #- npm install
