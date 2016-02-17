@@ -23,13 +23,13 @@ function getMsgPromise(resolve, reject){
   })
 
 }
-
+/*
 it('should always fail', function(){
 
 	return expect(1).to.equal(2);
 
 })
-
+*/
 it('should return phrase "Are you connecting" asynchronously', function() {
   
   var result = new Promise(getMsgPromise);
