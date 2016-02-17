@@ -15,7 +15,7 @@ before_install:
  #- node server.js &
   - docker build -t docker_node .
   - docker ps -a
-  - docker run  docker_node /bin/sh -c "cd /usr/src/node_server;"
+  - docker run -p 3002:3002  docker_node /bin/sh -c "cd /; ./startup_node.sh"
 
 cache: docker_node
 
