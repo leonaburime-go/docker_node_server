@@ -25,4 +25,4 @@ before_script:
    - npm install -g mocha
 
 script: true
-  #- mocha /usr/src/node_server/test.js
+   - mocha 
