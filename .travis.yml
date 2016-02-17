@@ -23,7 +23,9 @@ install: true
 
 before_script:
    - npm install -g mocha
+   - pwd
    - ls -la
 
 script: true
+   - pwd
    - mocha 
