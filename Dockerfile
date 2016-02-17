@@ -14,7 +14,3 @@ COPY startup_node.sh /startup_node.sh
 RUN chmod +x /startup_node.sh
 CMD ["/startup_node.sh"]
 
-
-
-
-
