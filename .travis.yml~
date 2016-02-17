@@ -10,7 +10,7 @@ node_js:
   - "4.0"
   - "0.12"
 
-script:
+before_install:
  #- node server.js &
   - docker build -t docker_node .
   - docker run -dt -p 3002:3002 docker_node /bin/sh -c "cd /usr/src/node_server; mocha /usr/src/node_server/test.js"
@@ -20,5 +20,5 @@ install: true
   #- npm install -g mocha
   #- mocha test
 
-#script: true
+script: true
   #- mocha /usr/src/node_server/test.js
