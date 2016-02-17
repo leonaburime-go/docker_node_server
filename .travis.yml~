@@ -23,7 +23,7 @@ install: true
 
 before_script:
    - npm install -g mocha
-
+   - ls -la
 
 script: true
    - mocha 
