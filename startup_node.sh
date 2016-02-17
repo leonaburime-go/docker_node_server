@@ -4,8 +4,11 @@
 #cp -rf /docker_volumes/node_server /usr/src/node_server
 #cd /usr/src/node_server
 npm i -g mocha
+cd /usr/src/node_server
 npm install
-node /usr/src/node_server/server.js 
+node /usr/src/node_server/server.js &
+sleep 3 #Lets wait for the server to start
+mocha 
 #npm test
 
 
