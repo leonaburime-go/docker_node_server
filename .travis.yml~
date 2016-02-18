@@ -36,5 +36,6 @@ script:
    - pwd
    - cd node_server
    - ps -x
+   - sleep 3
    - docker ps -a
    - mocha 

@@ -6,7 +6,7 @@ var chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 
 
-var PORT = 3002;
+var PORT = 3001;
 
 function getMsgPromise(resolve, reject){
 
