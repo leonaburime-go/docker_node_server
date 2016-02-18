@@ -6,9 +6,9 @@
 npm i -g mocha
 cd /usr/src/node_server
 npm install
-node /usr/src/node_server/server.js &
-sleep 3 #Lets wait for the server to start
-mocha 
+node /usr/src/node_server/server.js 
+#sleep 3 #Lets wait for the server to start
+#mocha 
 #npm test
 
 
