@@ -32,4 +32,4 @@ before_script:
 script:
    - pwd
    - cd node_server
-   - mocha 
+   #- mocha 
