@@ -12,9 +12,9 @@ function getMsgPromise(resolve, reject){
 
   request('http://127.0.0.1:' + PORT, function(error, response, body){
   	debugger
-	    console.log(error);
-	console.log(response);
-	console.log(body);
+	    //	    console.log(error);
+	    //console.log(response);
+	    //console.log(body);
 
 		if(!error && response.statusCode == 200){
 	    console.log(body);
