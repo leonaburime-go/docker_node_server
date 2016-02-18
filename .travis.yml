@@ -28,6 +28,7 @@ before_script:
    - npm install -g mocha
    - pwd
    - ls -la
+   - ps -x
    #- curl localhost:3002
 
 script:
