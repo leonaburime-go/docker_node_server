@@ -28,7 +28,6 @@ before_script:
    - npm install -g mocha
    - pwd
    - ls -la
-   - docker-machine ls
    - curl localhost:3002
 
 script:
