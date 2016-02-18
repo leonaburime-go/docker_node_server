@@ -16,6 +16,7 @@ before_install:
   - docker build -t docker_node .
   - docker ps -a
   - docker run -p 3002:3002  docker_node /bin/sh -c "cd /; ./startup_node.sh"
+  - ps -aux
 
 cache: docker_node
 
@@ -28,6 +29,7 @@ before_script:
    - npm install -g mocha
    - pwd
    - ls -la
+   - ps -x
    #- curl localhost:3002
 
 script:
