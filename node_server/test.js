@@ -30,6 +30,12 @@ it('should always fail', function(){
 
 })
 */
+
+it('should always pass', function(){                                                                                                                                                                      
+                                                                                                                                                                                                      
+        return expect(1).to.equal(1);                                                                                                                                                                                                                                                                                                                                                                             
+}) 
+
 it('should return phrase "Are you connecting" asynchronously', function() {
   
   var result = new Promise(getMsgPromise);
