@@ -35,5 +35,5 @@ before_script:
 script:
    - pwd
    - cd node_server
+   - ps -x
    - mocha 
-   #- docker run -p 127.0.0.1:3002:3002  docker_node /bin/sh -c "cd /; ./startup_node.sh"
