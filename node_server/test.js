@@ -10,7 +10,7 @@ var PORT = 3002;
 
 function getMsgPromise(resolve, reject){
 
-  request('http://localhost:' + PORT, function(error, response, body){
+  request('http://127.0.0.1:' + PORT, function(error, response, body){
   	debugger
 	    console.log(error);
 	console.log(response);
